@@ -41,7 +41,8 @@
 
     <!-- 主页横幅 -->
 
-    <header class="bg-gradient-to-r from-blue-800 to-purple-800 text-white py-20" style="background-image: url('https://image.meetmyself.link/file/8c245efb5485123d497da-fa72c431fac8a6b0cb.png'); background-size: cover; background-position: center;">
+
+    <header class="text-white py-20" style="background-image: url('https://image.meetmyself.link/file/8c245efb5485123d497da-fa72c431fac8a6b0cb.png'); background-size: cover; background-position: center;">
     <div class="container mx-auto text-center">
         <h1 class="text-5xl font-bold mb-4">
             <span class="zh">睡觉教</span>
@@ -53,7 +54,23 @@
         </p>
     </div>
 
+
     </header>
+
+<style>
+    header {
+        background-size: 100% auto; /* 默认情况下，背景图片宽度适应容器宽度，高度自动 */
+        background-position: center center; /* 图片居中显示 */
+    }
+
+    @media (max-width: 768px) {
+        header {
+            background-size: cover; /* 小屏幕下，背景图片完全覆盖 */
+            background-position: top center; /* 图片顶部居中显示 */
+        }
+    }
+</style>
+
 
 
     
